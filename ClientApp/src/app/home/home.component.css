@@ -1,0 +1,35 @@
+body {
+  background-color: #EEE;
+  height: 100vh;
+}
+
+.darkblue {
+  color: #04162c;
+}
+
+.padded {
+  padding: 1em 1em 1em 1em;
+}
+
+.image-header {
+  width: 100vw;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+@media only screen and (min-width: 767px) {
+  .padded {
+    padding: 1em 9em 3em 6em;
+  }
+
+  .image-header {
+    max-width: 100%;
+  }
+}
+
+
+@media only screen and (min-width: 990px) {
+  .padded {
+    padding: 1em 12em 3em 9em;
+  }
+}

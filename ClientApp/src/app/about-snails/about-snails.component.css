@@ -1,0 +1,24 @@
+body {
+  background-color: #EEE;
+  height: 100vh;
+}
+
+.darkblue {
+  color: #04162c;
+}
+
+.padded {
+  padding: 1em 1em 1em 1em;
+}
+
+@media only screen and (min-width: 767px) {
+  .padded {
+    padding: 1em 9em 3em 6em;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .padded {
+    padding: 1em 12em 3em 9em;
+  }
+}

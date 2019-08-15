@@ -1,0 +1,38 @@
+<div class='main-nav'>
+    <div class='navbar'>
+        <div class='navbar-header'>
+          <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse' [attr.aria-expanded]='isExpanded' (click)='toggle()'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+            <a id='navbarTitle' class='navbar-brand' [routerLink]='["/"]'></a>
+        </div>
+        <div class='clearfix'></div>
+        <div class='navbar-collapse collapse' [ngClass]='{ "in": isExpanded }'>
+            <ul class='nav navbar-nav'>
+                <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+                    <a [routerLink]='["/"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-home'></span> Naslovna
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/about-snails"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-info-sign'></span> O puževima
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/gallery"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-picture'></span> Galerija
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/contact"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-envelope'></span> Kontakt
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

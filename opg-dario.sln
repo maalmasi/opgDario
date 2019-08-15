@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "opg-dario", "opg-dario.csproj", "{C85AFA83-1EC8-478D-9541-530903FBFE70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C85AFA83-1EC8-478D-9541-530903FBFE70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C85AFA83-1EC8-478D-9541-530903FBFE70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C85AFA83-1EC8-478D-9541-530903FBFE70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C85AFA83-1EC8-478D-9541-530903FBFE70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D7BF526-FC53-4A6B-A547-5623FEC1E3D1}
+	EndGlobalSection
+EndGlobal

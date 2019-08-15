@@ -1,0 +1,34 @@
+<body>
+  <div class="padded">
+    <h3 class="darkblue"><strong>Kontaktirajte nas</strong></h3>
+    <form [formGroup]="emailForm" (ngSubmit)="onFormSubmit()" (ngClass)="{'form-submitted': formSubmitted}">
+      <div class="form-row">
+        <div class="form-group col-md-6 nopadding">
+          <label for="senderName" class="darkblue split-padding-left">Ime i prezime</label>
+          <input formControlName="senderName" type="text" class="form-control split-padding-left" id="senderName" placeholder="Unesite Vaše ime i prezime" />
+        </div>
+        <div class="form-group col-md-6 nopadding">
+          <label for="senderEmail" class="darkblue split-padding-right">Email adresa</label>
+          <input formControlName="senderEmail" type="text" class="form-control split-padding-right" id="senderEmail" placeholder="Unesite Vašu email adresu" />
+        </div>
+      </div>
+      <div class="form-group col-lg-12 nopadding">
+        <label for="subject" class="darkblue">Predmet</label>
+        <input formControlName="senderSubject" type="text" class="form-control" id="subject" placeholder="Unesite predmet poruke" />
+      </div>
+      <div class="form-group col-lg-12 nopadding">
+        <label for="senderMessage" class="darkblue">Poruka</label>
+        <textarea formControlName="senderMessage" class="form-control" rows="7" id="yourMessage" placeholder="Unesite Vašu poruku"></textarea>
+        <small>Sva polja su obvezna.</small>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6 nopadding">
+          <button type="submit" [disabled]="emailForm.invalid" class="btn btn-darkblue btn-block split-padding-left">Pošalji</button>
+        </div>
+        <div class="form-group col-md-6 nopadding">
+          <button type="reset" class="btn btn-lightblue btn-block split-padding-right">Poništi</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>

@@ -1,0 +1,59 @@
+body {
+  background-color: #EEE;
+  height: 100vh;
+}
+
+.ng-valid.ng-dirty:not(form) {
+  border: solid 2px lightgreen;
+}
+
+.ng-invalid.ng-dirty:not(form), .ng-invalid:not(form).form-submitted {
+  border: solid 2px lightcoral;
+}
+
+.darkblue {
+  color: #04162c;
+}
+
+.nopadding {
+  padding: 1em 0 1em 0 !important;
+  margin: 0 !important;
+}
+
+@media only screen and (min-width: 990px) {
+  .split-padding-left {
+    margin-right: 2em;
+    width: calc(100% - 2em);
+  }
+
+  .split-padding-right {
+    margin-left: 2em;
+    width: calc(100% - 2em);
+  }
+}
+
+.btn-darkblue {
+  background-color: #04162c;
+  color: white;
+}
+
+.btn-lightblue {
+  background-color: #069ab1;
+  color: #04162c;
+}
+
+.padded {
+  padding: 1em 1em 1em 1em;
+}
+
+@media only screen and (min-width: 767px) {
+  .padded {
+    padding: 1em 9em 3em 6em;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .padded {
+    padding: 1em 12em 3em 9em;
+  }
+}
